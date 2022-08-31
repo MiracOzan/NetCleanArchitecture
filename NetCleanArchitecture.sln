@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "Core.Persistence\Core.Persistence.csproj", "{061A78BA-996F-454A-967C-2EB77105E0B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCuttingConcers", "Core.CrossCuttingConcerns\Core.CrossCuttingConcers.csproj", "{49D8A23E-FC58-4703-A371-2EEC20B77551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcers", "Core.CrossCuttingConcerns\Core.CrossCuttingConcers.csproj", "{49D8A23E-FC58-4703-A371-2EEC20B77551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{49D8A23E-FC58-4703-A371-2EEC20B77551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D8A23E-FC58-4703-A371-2EEC20B77551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49D8A23E-FC58-4703-A371-2EEC20B77551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{3D1650FD-37E3-4CE3-B93C-67AAD13E36D6} = {02BF31D1-C81F-4535-8E7C-7F04608A20AC}
 		{061A78BA-996F-454A-967C-2EB77105E0B8} = {EF659631-33A0-497D-9D12-DDE640BED9E9}
 		{49D8A23E-FC58-4703-A371-2EEC20B77551} = {EF659631-33A0-497D-9D12-DDE640BED9E9}
+		{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9} = {EF659631-33A0-497D-9D12-DDE640BED9E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B6ABB40-32C2-445F-8CB5-CD6CE4558419}

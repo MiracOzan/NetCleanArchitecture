@@ -1,7 +1,6 @@
 ﻿using Application.Features.Brands.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
 
 namespace WebApi.Controllers
 {
@@ -10,7 +9,7 @@ namespace WebApi.Controllers
     public class BrandsController : ControllerBase
     {
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] CreatedBrandCommand createdBrandCommand)
+        public async Task<IActionResult> Add([FromBody] CreateBrandCommand createdBrandCommand)
         {
             CreatedBrandDto result = await Mediator.Send(createdBrandCommand);
             return Created("", result);
