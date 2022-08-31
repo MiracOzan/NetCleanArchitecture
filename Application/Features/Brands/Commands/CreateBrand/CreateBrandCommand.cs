@@ -7,7 +7,7 @@ using MediatR;
 
 namespace Application.Features.Brands.Commands.CreateBrand
 {
-    internal class CreateBrandCommand : IRequest<CreatedBrandDto>
+    public partial class CreateBrandCommand : IRequest<CreatedBrandDto>
     {
         public string Name { get; set; }
 

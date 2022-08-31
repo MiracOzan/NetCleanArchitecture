@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Core.CrossCuttingConcers.Exceptions
 {
-    public BusinessException(string message) : base(message)
+    public class BusinessException : Exception
     {
+        public BusinessException(string message) : base(message)
+        {
+        }
     }
 }

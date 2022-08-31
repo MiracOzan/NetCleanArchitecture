@@ -1,4 +1,5 @@
 ﻿using Application.Services.Repositories;
+using Core.CrossCuttingConcers.Exceptions;
 using Core.Persistence.Paging;
 using Domain.Entities;
 
@@ -16,7 +17,12 @@ namespace Application.Features.Brands.Rules
         public async Task BrandNameCanNotBeDuplicatedWhenInserted(string name)
         {
             IPaginate<Brand> result = await _brandyRepository.GetListAsync(b => b.Name == name);
-            if (result.Items.Any()) throw new BusinessException("SomeFeatureEntity name exists.");
+            if (result.Items.Any()) throw new BusinessException("Brand name exists.");
+        }
+        public async Task BrandShouldExistWhenRequested(int Id)
+        {
+            Brand brand = await _brandyRepository.GetAsync(b => b.Id == Id);
+            if (brand == null) throw new BusinessException("Requested Brand does not exist.");
         }
     }
 }
