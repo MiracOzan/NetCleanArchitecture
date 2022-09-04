@@ -31,16 +31,17 @@ public class ExceptionMiddleware
         context.Response.ContentType = "application/json";
 
         if (exception.GetType() == typeof(ValidationException)) return CreateValidationException(context, exception);
-        if (exception.GetType() == typeof(BusinessException)) return CreateBusinessException(context, exception);
-        if (exception.GetType() == typeof(AuthorizationException))
-            return CreateAuthorizationException(context, exception);
+        //if (exception.GetType() == typeof(BusinessException)) return CreateBusinessException(context, exception);
+        //if (exception.GetType() == typeof(AuthorizationException))
+            //return CreateAuthorizationException(context, exception);
         return CreateInternalException(context, exception);
     }
 
+    /*
     private Task CreateAuthorizationException(HttpContext context, Exception exception)
     {
         context.Response.StatusCode = Convert.ToInt32(HttpStatusCode.Unauthorized);
-
+        
         return context.Response.WriteAsync(new AuthorizationProblemDetails
         {
             Status = StatusCodes.Status401Unauthorized,
@@ -50,7 +51,7 @@ public class ExceptionMiddleware
             Instance = ""
         }.ToString());
     }
-
+    
     private Task CreateBusinessException(HttpContext context, Exception exception)
     {
         context.Response.StatusCode = Convert.ToInt32(HttpStatusCode.BadRequest);
@@ -64,6 +65,7 @@ public class ExceptionMiddleware
             Instance = ""
         }.ToString());
     }
+    */
 
     private Task CreateValidationException(HttpContext context, Exception exception)
     {

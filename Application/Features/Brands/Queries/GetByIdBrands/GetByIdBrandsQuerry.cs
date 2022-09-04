@@ -34,7 +34,7 @@ namespace Application.Features.Brands.Queries.GetByIdBrands
             public async Task<BrandGetByIdDto> Handle(GetByIdBrandsQuerry request, CancellationToken cancellationToken)
             {
                 Brand? brand = await _brandRepository.GetAsync(b => b.Id == request.Id);
-                _brandBusinessRules.BrandNameCanNotBeDuplicatedWhenInserted(brand);
+                _brandBusinessRules.BrandShouldExistWhenRequested(brand);
                 BrandGetByIdDto brandGetByIdDto = _mapper.Map<BrandGetByIdDto>(brand);
                 return brandGetByIdDto;
             }

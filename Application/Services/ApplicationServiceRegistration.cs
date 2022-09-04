@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Application.Features.Brands.Rules;
 using Core.Application.Pipelines.Validation;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 

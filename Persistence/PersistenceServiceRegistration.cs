@@ -7,14 +7,17 @@ using Persistence.Repositories;
 
 namespace Persistence
 {
-    public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
-        IConfiguration configuration)
+    public static class PersistenceServiceRegistration
     {
-        services.AddDbContext<BaseDbContext>(options =>
-            options.UseSqlServer(
-                configuration.GetConnectionString("RentACarCampConnectionString")));
-        services.AddScoped<IBrandRepository, BrandRepository>();
+        public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            services.AddDbContext<BaseDbContext>(options =>
+                options.UseSqlServer(
+                    configuration.GetConnectionString("RentACarCampConnectionString")));
+            services.AddScoped<IBrandRepository, BrandRepository>();
 
-        return services;
+            return services;
+        }
     }
 }

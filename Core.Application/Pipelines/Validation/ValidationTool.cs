@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using System.ComponentModel.DataAnnotations;
 
 namespace Core.Application.Pipelines.Validation;
 
