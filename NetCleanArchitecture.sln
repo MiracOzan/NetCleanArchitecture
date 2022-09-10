@@ -5,27 +5,27 @@ VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EA29B1A5-61C4-4576-8D99-6A8812D8821C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "corePackages", "{EF659631-33A0-497D-9D12-DDE640BED9E9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "src\corePackages", "{EF659631-33A0-497D-9D12-DDE640BED9E9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demoProjects", "demoProjects", "{02D17090-9088-4586-83DF-38EDDB6254A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demoProjects", "src\demoProjects", "{02D17090-9088-4586-83DF-38EDDB6254A5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rentACar", "rentACar", "{02BF31D1-C81F-4535-8E7C-7F04608A20AC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rentACar", "src\demoProjects\rentACar", "{02BF31D1-C81F-4535-8E7C-7F04608A20AC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{AF8B2A4D-6CF8-4DF3-BA0E-A1BAEA753C30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\demoProjects\rentACar\Application\Application.csproj", "{AF8B2A4D-6CF8-4DF3-BA0E-A1BAEA753C30}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{AAC7132E-9F75-49CD-B536-DE629EAFCC16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\demoProjects\rentACar\Domain\Domain.csproj", "{AAC7132E-9F75-49CD-B536-DE629EAFCC16}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "İnfrastructure", "İnfrastructure\İnfrastructure.csproj", "{1A9F7694-A0E1-425E-949B-A1CC0A7FA956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "İnfrastructure", "src\demoProjects\rentACar\İnfrastructure\İnfrastructure.csproj", "{1A9F7694-A0E1-425E-949B-A1CC0A7FA956}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{73B7EA43-D305-41E0-8D93-CFBC220A09F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\demoProjects\rentACar\Persistence\Persistence.csproj", "{73B7EA43-D305-41E0-8D93-CFBC220A09F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{3D1650FD-37E3-4CE3-B93C-67AAD13E36D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\demoProjects\rentACar\WebApi\WebApi.csproj", "{3D1650FD-37E3-4CE3-B93C-67AAD13E36D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "Core.Persistence\Core.Persistence.csproj", "{061A78BA-996F-454A-967C-2EB77105E0B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "src\corePackages\Core.Persistence\Core.Persistence.csproj", "{061A78BA-996F-454A-967C-2EB77105E0B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcers", "Core.CrossCuttingConcerns\Core.CrossCuttingConcers.csproj", "{49D8A23E-FC58-4703-A371-2EEC20B77551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcers", "src\corePackages\Core.CrossCuttingConcerns\Core.CrossCuttingConcers.csproj", "{49D8A23E-FC58-4703-A371-2EEC20B77551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "src\corePackages\Core.Application\Core.Application.csproj", "{105DB840-3AC0-408E-B53E-6B0EE0A1E2B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
