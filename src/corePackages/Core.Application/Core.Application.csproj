@@ -9,7 +9,14 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.2.1" />
     <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.23.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.CrossCuttingConcerns\Core.CrossCuttingConcers.csproj" />
+    <ProjectReference Include="..\Core.Security\Core.Security.csproj" />
   </ItemGroup>
 
 </Project>
